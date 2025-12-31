@@ -32,6 +32,7 @@ export const Navbar = () => {
     const links = [
         { name: 'Home', href: '#' },
         { name: 'Services', href: '#services' },
+        { name: 'Testimonials', href: '#reviews' },
         { name: 'Pricing', href: '#pricing' },
         { name: 'Contact', href: '#start-growing' },
     ];
