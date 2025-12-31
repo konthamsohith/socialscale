@@ -1,0 +1,14 @@
+src/components/layout/Footer.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/layout/Navbar.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/CTA.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/FAQ.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/Hero.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/Pricing.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/Process.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/Projects.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/Services.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/Services.tsx(3,38): error TS6133: 'Zap' is declared but its value is never read.
+src/components/sections/Stats.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/sections/TrustedBy.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/pages/Contact.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/pages/Home.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
