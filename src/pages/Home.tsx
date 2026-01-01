@@ -3,11 +3,11 @@ import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Hero } from '../components/sections/Hero';
 import { Stats } from '../components/sections/Stats';
-import { Services } from '../components/sections/Services';
+import { Benefits } from '../components/sections/Benefits';
 import { Suspense, lazy } from 'react';
 
 // Lazy load heavy graphical sections
-const Comparison = lazy(() => import('../components/sections/Comparison').then(module => ({ default: module.Comparison })));
+const Services = lazy(() => import('../components/sections/Services').then(module => ({ default: module.Services })));
 const Integrations = lazy(() => import('../components/sections/Integrations').then(module => ({ default: module.Integrations })));
 const Testimonials = lazy(() => import('../components/sections/Testimonials').then(module => ({ default: module.Testimonials })));
 const Pricing = lazy(() => import('../components/sections/Pricing').then(module => ({ default: module.Pricing })));
@@ -19,10 +19,10 @@ export const Home = () => {
             <main>
                 <Hero />
                 <Stats />
-                <Services />
+                <Benefits />
 
                 <Suspense fallback={<div className="h-screen bg-white" />}>
-                    <Comparison />
+                    <Services />
                     <Testimonials />
                     <Pricing />
                     <Integrations />

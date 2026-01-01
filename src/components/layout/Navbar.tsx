@@ -31,6 +31,7 @@ export const Navbar = () => {
 
     const links = [
         { name: 'Home', href: '#' },
+        { name: 'Benefits', href: '#benefits' },
         { name: 'Services', href: '#services' },
         { name: 'Testimonials', href: '#reviews' },
         { name: 'Pricing', href: '#pricing' },
@@ -54,7 +55,14 @@ export const Navbar = () => {
             )}>
                 <div className="flex items-center gap-2">
                     <img src="/logo.png" alt="SocialScale Logo" className="w-8 h-8 object-contain" />
-                    <span className="font-bold text-lg tracking-tight">SocialScale</span>
+                    <span style={{
+                        fontFamily: 'sans-serif',
+                        fontWeight: 700,
+                        fontStyle: 'normal',
+                        color: 'rgb(0, 0, 0)',
+                        fontSize: '20px',
+                        lineHeight: 'normal'
+                    }}>SocialScale</span>
                 </div>
 
                 <div className="hidden md:flex items-center bg-slate-100/50 rounded-full px-1 p-1 border border-slate-200/50">
@@ -63,7 +71,14 @@ export const Navbar = () => {
                             key={link.name}
                             href={link.href}
                             onClick={(e) => handleNavClick(e, link.href)}
-                            className="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors rounded-full hover:bg-white"
+                            className="px-4 py-2 text-slate-600 hover:text-slate-900 transition-colors rounded-full hover:bg-white"
+                            style={{
+                                fontFamily: 'Archivo, "Archivo Placeholder", sans-serif',
+                                fontWeight: 400,
+                                fontStyle: 'normal',
+                                fontSize: '16px',
+                                lineHeight: '22px'
+                            }}
                         >
                             {link.name}
                         </a>
@@ -71,7 +86,7 @@ export const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-4">
-                    <Button size="sm" onClick={(e) => handleNavClick(e, "#start-growing")}>Get Started</Button>
+                    <Button size="sm" onClick={(e) => handleNavClick(e, "#start-growing")} className="font-archivo font-medium text-[16px] leading-[22px] text-white">Get Started</Button>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -96,7 +111,7 @@ export const Navbar = () => {
                             </a>
                         ))}
                         <div className="h-px bg-slate-100 my-2" />
-                        <Button className="w-full" onClick={(e) => handleNavClick(e, "#start-growing")}>Get Started</Button>
+                        <Button className="w-full font-archivo font-medium text-[16px] leading-[22px] text-white" onClick={(e) => handleNavClick(e, "#start-growing")}>Get Started</Button>
                     </div>
                 )}
             </div>

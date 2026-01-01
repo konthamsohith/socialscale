@@ -55,7 +55,7 @@ const ReviewCard = ({ review }: { review: typeof reviews[0] }) => (
         <div className="mb-6">
             <img src={review.image} alt={review.name} className="w-14 h-14 rounded-full object-cover grayscale" />
         </div>
-        <p className="text-xl md:text-2xl font-medium text-slate-800 leading-relaxed mb-auto">
+        <p className="font-archivo font-medium text-xl md:text-2xl text-[#3D3D3D] leading-[22px] mb-auto">
             "{review.content}"
         </p>
         <div className="mt-8">
@@ -93,6 +93,12 @@ const VideoCard = ({ review, onPlay, onPause }: { review: any, onPlay: () => voi
         }
     };
 
+    const handleLoadedMetadata = () => {
+        if (videoRef.current) {
+            videoRef.current.currentTime = 0.1;
+        }
+    };
+
     return (
         <div
             onClick={togglePlayback}
@@ -101,8 +107,9 @@ const VideoCard = ({ review, onPlay, onPause }: { review: any, onPlay: () => voi
             <video
                 ref={videoRef}
                 src={review.video}
+                onLoadedMetadata={handleLoadedMetadata}
                 className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                preload="metadata"
+                preload="auto"
                 playsInline
                 loop
                 muted={isMuted}
@@ -174,10 +181,15 @@ export const Testimonials = () => {
                     transition={{ duration: 0.8 }}
                     className="max-w-7xl mx-auto px-6 mb-16 md:mb-24 text-center"
                 >
-                    <span className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase mb-6 block">Testimonials</span>
-                    <h2 className="text-5xl md:text-7xl font-medium text-slate-900 tracking-tight leading-[1.1] max-w-4xl mx-auto">
+                    <div className="flex items-center justify-center gap-2 mb-6">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="text-[#0037FF]">
+                            <path d="M12 0C13.5 7.5 16.5 10.5 24 12C16.5 13.5 13.5 16.5 12 24C10.5 16.5 7.5 13.5 0 12C7.5 10.5 10.5 7.5 12 0Z" />
+                        </svg>
+                        <span className="font-archivo font-normal text-[14px] leading-[17px] text-black uppercase">Testimonials</span>
+                    </div>
+                    <h2 className="font-archivo font-semibold text-[56px] leading-[62px] text-black max-w-4xl mx-auto">
                         Don't take our word for it!<br />
-                        <span className="text-slate-400">Hear it from our partners.</span>
+                        <span className="text-black">Hear it from our partners.</span>
                     </h2>
                 </motion.div>
 

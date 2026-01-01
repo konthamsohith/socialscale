@@ -35,8 +35,8 @@ export const Stats = () => {
             <div className="max-w-7xl mx-auto px-6">
 
                 <div className="text-center mb-12">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-2">Trusted by Millions Worldwide</h2>
-                    <p className="text-slate-500 max-w-2xl mx-auto">
+                    <h2 className="font-archivo font-semibold text-[24px] leading-[26px] text-black mb-2">Trusted by Millions Worldwide</h2>
+                    <p className="font-archivo font-normal text-[16px] leading-[22px] text-[#6D6D6D] max-w-2xl mx-auto">
                         Join the community of successful brands and influencers who've transformed their social presence with our proven strategies.
                     </p>
                 </div>
@@ -51,11 +51,11 @@ export const Stats = () => {
                             viewport={{ once: true }}
                             className="p-4 flex flex-col items-center"
                         >
-                            <div className="text-3xl md:text-5xl font-bold text-slate-900 mb-2">
+                            <div className="font-archivo font-bold text-[48px] leading-[53px] text-black mb-2">
                                 <Counter value={stat.value} suffix={stat.suffix} decimals={stat.decimals} />
                             </div>
-                            <div className="text-slate-900 font-bold mb-1">{stat.label}</div>
-                            <div className="text-slate-500 text-sm">{stat.sub}</div>
+                            <div className="font-archivo font-semibold text-[16px] leading-[22px] text-black mb-1">{stat.label}</div>
+                            <div className="font-archivo font-normal text-[16px] leading-[22px] text-[#6D6D6D]">{stat.sub}</div>
                         </motion.div>
                     ))}
                 </div>

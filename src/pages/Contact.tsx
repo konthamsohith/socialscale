@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Navbar } from '../components/layout/Navbar';
 import { Footer } from '../components/layout/Footer';
 import { Button } from '../components/ui/Button';
@@ -50,7 +50,7 @@ export const Contact = () => {
                                     placeholder="How can we help you grow?"
                                 />
                             </div>
-                            <Button className="w-full" size="lg">Send Message</Button>
+                            <Button className="w-full font-archivo font-bold text-[20px] leading-[28px]" size="lg">Get Started Now</Button>
                         </form>
                     </div>
 

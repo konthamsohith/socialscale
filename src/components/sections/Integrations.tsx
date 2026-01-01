@@ -61,7 +61,7 @@ export const Integrations = () => {
                             <motion.div
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
-                                className="bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-semibold text-slate-600 shadow-lg"
+                                className="bg-white/90 backdrop-blur-sm px-4 py-1.5 rounded-full font-archivo font-normal text-[14px] leading-[17px] text-black shadow-lg"
                             >
                                 {item.name}
                             </motion.div>
@@ -75,7 +75,7 @@ export const Integrations = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-400/20 border border-blue-300/30 text-white text-sm font-bold uppercase tracking-wider backdrop-blur-md shadow-lg"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-400/20 border border-blue-300/30 text-white font-archivo font-bold text-[14px] leading-[17px] backdrop-blur-md shadow-lg"
                     >
                         <Sparkles size={14} fill="currentColor" />
                         Start Growing
@@ -86,7 +86,7 @@ export const Integrations = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-5xl md:text-7xl font-bold text-white tracking-tight drop-shadow-sm leading-tight"
+                        className="font-archivo font-semibold text-[72px] leading-[80px] text-white"
                     >
                         Ready to Scale <br /> Your Social Media?
                     </motion.h2>
@@ -108,10 +108,10 @@ export const Integrations = () => {
                         transition={{ delay: 0.3 }}
                         className="flex flex-col sm:flex-row justify-center w-full gap-4"
                     >
-                        <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 border-none px-8 py-4 rounded-full text-lg font-bold shadow-2xl shadow-blue-900/20 transition-all hover:scale-105 active:scale-95">
+                        <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 border-none px-8 py-4 rounded-full font-archivo font-bold text-[16px] leading-[22px] shadow-2xl shadow-blue-900/20 transition-all hover:scale-105 active:scale-95">
                             Get Started Now <ArrowRight className="ml-2 w-5 h-5" />
                         </Button>
-                        <Button size="lg" className="bg-transparent text-white border-2 border-white/30 hover:bg-white/10 px-8 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 active:scale-95">
+                        <Button size="lg" className="bg-transparent text-white border-2 border-white/30 hover:bg-white/10 px-8 py-4 rounded-full font-archivo font-bold text-[16px] leading-[22px] transition-all hover:scale-105 active:scale-95">
                             Schedule Meet <Calendar className="ml-2 w-5 h-5" />
                         </Button>
                     </motion.div>
