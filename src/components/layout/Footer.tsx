@@ -95,7 +95,7 @@ export const Footer = () => {
 
                 <div className="pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="font-archivo font-normal text-[12px] leading-[16px] text-[#6D6D6D]">
-                        © 2025 SocialScale. All rights reserved.
+                        &copy; {new Date().getFullYear()} SocialScale. All rights reserved.
                     </p>
                     <div className="flex gap-6">
                         <a href="#" onClick={(e) => e.preventDefault()} className="text-slate-400 hover:text-electric-purple transition-colors"><XIcon size={20} /></a>
